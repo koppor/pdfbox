@@ -5,11 +5,21 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        java: [ 8, 11, 15 ]
+        java: [ 8, 9, 10, 11, 12, 13, 14, 15 ]
         include:
           - java: 8
             profile: default
+          - java: 9
+            profile: jdk9
+          - java: 10
+            profile: jdk9
           - java: 11
+            profile: jdk11
+          - java: 12
+            profile: jdk11
+          - java: 13
+            profile: jdk11
+          - java: 14
             profile: jdk11
           - java: 15
             profile: jdk15
