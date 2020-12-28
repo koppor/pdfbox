@@ -22,7 +22,7 @@ jobs:
           - java: 14
             profile: jdk11
           - java: 15
-            profile: jdk15
+            profile: jdk11
       fail-fast: false
     steps:
       - uses: actions/checkout@v2
